@@ -34,7 +34,7 @@ def playNumHosts():
         print ("Correct!")
     else:
         print ("Wrong!")
-        print ("The correct answer is /"+str(netmask))
+    print ("The answer is /"+str(netmask))
 
 def playNetAddress():
     randIPAddress = getRandIPAddress()
@@ -46,7 +46,7 @@ def playNetAddress():
         print ("Correct!")
     else:
         print ("Wrong!")
-        print ("The correct answer is : " + ipNetworkAddress)
+    print ("The correct answer is : " + ipNetworkAddress)
 
 def getAddressRange(ipNetwork):
     [min, netmask] = str(ipNetwork).split('/')
@@ -72,9 +72,9 @@ def playAddressRange():
         print ("Correct!")
     else:
         print ("Wrong!")
-        print ("The correct answers are :")
-        print ("\tmin : " + str(min))
-        print ("\tmax : " + str(max))
+    print ("The answers are :")
+    print ("\tmin : " + str(min))
+    print ("\tmax : " + str(max))
 
 def playSubnetMemb():
     ipNetwork1 = addressToNetowrk(getRandIPAddress(), getRandNetmask())
